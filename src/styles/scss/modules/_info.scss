@@ -1,0 +1,39 @@
+.info {
+    margin-bottom: 90px;
+    .container {
+
+        @include media ('>=1024px') {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .heading-holder {
+        font-size: 23px;
+        @include media ('>=768px') {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .info-subtitle {
+            margin-bottom: 20px;
+        }
+    }
+    
+    .content {
+        
+        @include media ('>=768px') {
+            text-align: right;
+            width: 100%;
+        }
+        @include media ('>=1024px') {
+            text-align: left;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.header {
+    position: relative;
+    padding: 20px 0;
+    background-color: #fff;
+  
+    &.active {
+      .nav-list {
+        opacity: 1;
+        visibility: visible;
+      }
+  
+      .nav-btn {
+        span {
+          opacity: 0;
+        }
+  
+        &:before {
+          transform: rotate(45deg);
+          top: 17px;
+        }
+  
+        &:after {
+          transform: rotate(-45deg);
+          bottom: 5px;
+        }
+      }
+    }
+  
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    
+  //   .search-btn {
+  //     margin-right: 20px;
+  //     background-color: transparent;
+  //     border: 0;
+  //     @include media ('>=768px') {
+  //       margin-right: 40px;
+  //     }
+
+  //     @include media ('>=1024px') {
+  //       // display: flex;
+  //       // justify-content: center;
+  //       // align-items: center;
+  //     }
+  //   }
+  // }
+}
